@@ -1,0 +1,5 @@
+# ninja log v5
+0	690	7208108047243877	CMakeFiles/Formula.dir/src/Main.cpp.obj	66d86eef3a501822
+17	719	7208108047534884	CMakeFiles/Formula.dir/src/Functions.cpp.obj	46b9f5b770c77f23
+719	842	7208108048706587	Formula.exe	1ffcd53c2ecafcc7
+1	1785	7208508586909540	build.ninja	f8857ab6bd603590

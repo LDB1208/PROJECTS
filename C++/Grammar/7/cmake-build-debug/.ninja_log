@@ -1,0 +1,4 @@
+# ninja log v5
+1	538	7208073376321055	build.ninja	f3570a67a4b0c3d3
+1	556	7208073367284759	CMakeFiles/7.dir/src/Main.cpp.obj	d4f1c18fca4e1ccf
+558	665	7208073368334223	7.exe	787e9fcdc6b6fb45
