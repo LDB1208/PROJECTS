@@ -59,6 +59,6 @@ int main() {
 
     dur = (double) (end - start); //计算相差多少CLOCKS_PER_SEC
     cout << "花费时间:" << (dur / CLOCKS_PER_SEC) << "s\n";
-    system("pause");
+    cin.get();
     return 0;
 }

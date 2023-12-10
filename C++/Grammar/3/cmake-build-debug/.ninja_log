@@ -1,4 +1,8 @@
 # ninja log v5
-24	131	7208067298922018	CMakeFiles/3.dir/src/Functions.cpp.obj	1cba42afbaf4e7a8
-0	458	7208067302189379	CMakeFiles/3.dir/src/Main.cpp.obj	607116faa0cdbcc7
-460	561	7208067303172259	3.exe	10d53adb55cae5ae
+1	2802	7232789175109235	CMakeFiles/3.dir/src/Functions.cpp.obj	1cba42afbaf4e7a8
+2804	3933	7232789186374589	3.exe	10d53adb55cae5ae
+19	2804	7232789175129437	CMakeFiles/3.dir/src/Main.cpp.obj	607116faa0cdbcc7
+1	5090	7232789247835615	build.ninja	c911680d6c4b89fd
+3	111	7232789583586671	CMakeFiles/3.dir/src/Functions.cpp.obj	1cba42afbaf4e7a8
+20	478	7232789587253571	CMakeFiles/3.dir/src/Main.cpp.obj	607116faa0cdbcc7
+478	584	7232789588278553	3.exe	10d53adb55cae5ae
