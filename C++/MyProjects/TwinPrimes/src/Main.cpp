@@ -13,10 +13,10 @@ int Primes[25] = {2, 3, 5, 7, 11,
 bool PrimeResult(int n) {
     if (n <= 1)
         return false;
-    for (int i = 0; i < 24; ++i) {
-        if (n == Primes[i])
+    for (int Prime : Primes) {
+        if (n == Prime)
             return true;
-        else if (n % Primes[i] == 0)
+        else if (n % Prime == 0)
             return false;
     }
     for (int i = 101; i <= sqrt(n); ++i)
@@ -31,7 +31,7 @@ int main() {
     clock_t start, end; //计时器
     double dur;
 
-    cout << "这个程序实现孪生素数的枚举" << endl;
+    cout << "这个程序实现孪生素数的枚举\n";
     cin.get();
 
     cout << "下限:";
@@ -45,7 +45,7 @@ int main() {
         if (PrimeResult(i)) {
             int j = i + 2;
             if (PrimeResult(j) && j <= max) {
-                cout << i << " " << j << endl;
+                cout << i << " " << j << "\n";
                 ++flag;
             }
         }
@@ -59,6 +59,7 @@ int main() {
 
     dur = (double) (end - start); //计算相差多少CLOCKS_PER_SEC
     cout << "花费时间:" << (dur / CLOCKS_PER_SEC) << "s\n";
+    cin.get(); //读取换行符(\n)
     cin.get();
     return 0;
 }

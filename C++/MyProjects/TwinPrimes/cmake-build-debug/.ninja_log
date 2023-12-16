@@ -1,5 +1,24 @@
 # ninja log v5
-3	513	7208617907073482	CMakeFiles/TwinPrimes.dir/src/Main.cpp.obj	b4aabcf55139a683
-514	614	7208617908022636	TwinPrimes.exe	74ecee58a7a2a245
 4	772	7238833396972024	CMakeFiles/TwinPrimes.dir/src/Main.cpp.obj	b4aabcf55139a683
 772	900	7238833398222947	TwinPrimes.exe	74ecee58a7a2a245
+0	1243	7244229571231266	build.ninja	623bf1a4f82d3ea5
+2	1075	7244229582185922	CMakeFiles/TwinPrimes.dir/src/Main.cpp.obj	b4aabcf55139a683
+1075	1335	7244229584739255	TwinPrimes.exe	74ecee58a7a2a245
+2	664	7244230152258924	CMakeFiles/TwinPrimes.dir/src/Main.cpp.obj	b4aabcf55139a683
+664	792	7244230153479477	TwinPrimes.exe	74ecee58a7a2a245
+3	646	7244231448732785	CMakeFiles/TwinPrimes.dir/src/Main.cpp.obj	b4aabcf55139a683
+647	871	7244231450912759	TwinPrimes.exe	74ecee58a7a2a245
+3	643	7244231651867396	CMakeFiles/TwinPrimes.dir/src/Main.cpp.obj	b4aabcf55139a683
+643	760	7244231652990628	TwinPrimes.exe	74ecee58a7a2a245
+3	630	7244232024376699	CMakeFiles/TwinPrimes.dir/src/Main.cpp.obj	b4aabcf55139a683
+631	745	7244232025473036	TwinPrimes.exe	74ecee58a7a2a245
+3	629	7244232308743721	CMakeFiles/TwinPrimes.dir/src/Main.cpp.obj	b4aabcf55139a683
+629	750	7244232309928476	TwinPrimes.exe	74ecee58a7a2a245
+2	759	7244233861817621	CMakeFiles/TwinPrimes.dir/src/Main.cpp.obj	b4aabcf55139a683
+759	917	7244233863354573	TwinPrimes.exe	74ecee58a7a2a245
+2	678	7244235335422359	CMakeFiles/TwinPrimes.dir/src/Main.cpp.obj	b4aabcf55139a683
+678	801	7244235336624792	TwinPrimes.exe	74ecee58a7a2a245
+2	592	7244235464480520	CMakeFiles/TwinPrimes.dir/src/Main.cpp.obj	b4aabcf55139a683
+592	712	7244235465637418	TwinPrimes.exe	74ecee58a7a2a245
+3	644	7244236366631281	CMakeFiles/TwinPrimes.dir/src/Main.cpp.obj	b4aabcf55139a683
+644	763	7244236367779255	TwinPrimes.exe	74ecee58a7a2a245

@@ -1,0 +1,6 @@
+# ninja log v5
+0	111	7244317452955199	CMakeFiles/MyFirstOpenGL.dir/src/Main.cpp.obj	58062480dfb640b4
+2	108	7244310507544504	CMakeFiles/MyFirstOpenGL.dir/main.cpp.obj	c4b9de5b11ac2673
+113	240	7244317454169383	MyFirstOpenGL.exe	35ab95e95eea16aa
+1	189	7244317686418562	build.ninja	11cc251b5537c42c
+2	132	7244317695561699	MyFirstOpenGL.exe	35ab95e95eea16aa
