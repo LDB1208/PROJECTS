@@ -1,6 +1,3 @@
 x64/
 Documentations/
 .vs/
-*.vcxproj
-*.vcxproj.filters
-*.vcxproj.user
