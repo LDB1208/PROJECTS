@@ -3,6 +3,7 @@ project(Example)
 
 set(CMAKE_CXX_STANDARD 17)
 set(MYSQL_DIR ../Library)
+
 include_directories(${MYSQL_DIR}/include)
 link_directories(${MYSQL_DIR}/lib)
 

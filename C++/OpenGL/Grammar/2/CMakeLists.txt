@@ -10,4 +10,4 @@ link_directories(${GLFW_DIR}/lib-mingw-w64 ${GLEW_DIR}/lib)
 
 add_executable(2 src/main.cpp)
 
-target_link_libraries(2 glew32s glfw3 opengl32)
+target_link_libraries(2 glew32 glfw3 opengl32)

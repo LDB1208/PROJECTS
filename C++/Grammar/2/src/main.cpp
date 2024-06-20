@@ -24,7 +24,7 @@ int main() {
     long long int ex4 = 99ll;
     float ex5 = 3.1f;
     double ex6 = 3.14159;
-    long double ex7 = 3.14159l;
+    long double ex7 = 3.14159L;
     cout << ex1 << " " << ex2 << " " << ex3 << " " << ex4 << " " << ex5 << " " << ex6 << " " << ex7 << endl;
     //C++11
     int e1{ 10 };

@@ -2,8 +2,8 @@
 #include <mysql.h>
 
 MYSQL *conn;
-MYSQL_RES *res;
-MYSQL_ROW row;
+//MYSQL_RES *res;
+//MYSQL_ROW row;
 
 int main() {
     conn = mysql_init(nullptr);
