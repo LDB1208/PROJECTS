@@ -3,10 +3,10 @@
 #include <vector>
 #include <tuple> //tuple
 
-using std::cout, std::endl, std::string;
+using std::cout, std::endl, std::string; //C++17
 
 /*
- * æœ¬ç¨‹åºæ¼”ç¤ºå‡½æ•°å¤šè¿”å›å€¼
+ * ±¾³ÌĞòÑİÊ¾º¯Êı¶à·µ»ØÖµ
  */
 
 string str1 = "Hello";
@@ -14,25 +14,21 @@ string str2 = "World";
 string str3 = "Hello";
 string str4 = "World";
 
-void return_strings1(string &r1, string &r2) {
+void return_strings1(string& r1, string& r2) {
     r1 = "LDB";
     r2 = "LAQ";
 }
 
-void return_strings2(string *p1, string *p2) {
-    if (p1) //åˆ¤æ–­æ˜¯å¦ä¸ºnullptr
+void return_strings2(string* p1, string* p2) {
+    if (p1) //ÅĞ¶ÏÊÇ·ñÎªnullptr
         *p1 = "LDB";
     if (p2)
         *p2 = "LAQ";
 }
 
-string *return_strings3(string s1, string s2) {
-    return new string[]{s1, s2};
-}
-
 std::tuple<string, string> return_strings4(string s1, string s2) {
-    //std::tuple<è¿”å›ç±»å‹>
-    return std::make_pair(s1, s2); //make_pairè¿”å›
+    //std::tuple<·µ»ØÀàĞÍ>
+    return std::make_pair(s1, s2); //make_pair·µ»Ø
 }
 
 std::pair<string, string> return_strings5(string s1, string s2) {
@@ -45,47 +41,41 @@ struct rstr {
 };
 
 rstr return_string6() {
-    return {str3, str4};
+    return { str3, str4 };
 }
 
 int main() {
-    //ç¬¬ä¸€ç§:ä¼ å¼•ç”¨
-    return_strings1(str1, str2); //r1, r2åˆ†åˆ«æ˜¯str1, str2çš„å¼•ç”¨
+    //µÚÒ»ÖÖ:´«ÒıÓÃ
+    return_strings1(str1, str2); //r1, r2·Ö±ğÊÇstr1, str2µÄÒıÓÃ
     cout << str1 << " " << str2 << endl;
 
     cout << "====================\n";
 
-    //ç¬¬äºŒç§:ä¼ æŒ‡é’ˆ
-    return_strings2(&str1, &str2); //p1, p2åˆ†åˆ«æ˜¯str1, str2çš„æŒ‡é’ˆ, å› æ­¤éœ€å–åœ°å€(&)
+    //µÚ¶şÖÖ:´«Ö¸Õë
+    return_strings2(&str1, &str2); //p1, p2·Ö±ğÊÇstr1, str2µÄÖ¸Õë, Òò´ËĞèÈ¡µØÖ·(&)
     cout << str1 << " " << str2 << endl;
     return_strings2(nullptr, nullptr);
     cout << str3 << " " << str4 << endl;
 
     cout << "====================\n";
 
-    //ç¬¬ä¸‰ç§:ä¼ æ•°ç»„
-    string *rstring = return_strings3(str1, str2);
-    cout << rstring[0] << " " << rstring[1] << endl;
-
-    cout << "====================\n";
-
-    //ç¬¬å››ç§:tuple
+    //µÚÈıÖÖ:tuple
     std::tuple<string, string> sources1 = return_strings4(str3, str4);
-    string tstring1 = std::get<0>(sources1); //getä¸‹æ ‡
+    string tstring1 = std::get<0>(sources1); //getÏÂ±ê
     string tstring2 = std::get<1>(sources1);
     cout << tstring1 << " " << tstring2 << endl;
 
     cout << "====================\n";
 
-    //ç¬¬äº”ç§:pair
+    //µÚËÄÖÖ:pair
     std::pair<string, string> pstring = return_strings5(str3, str4);
-    string tstring3 = pstring.first; //getä¸‹æ ‡
+    string tstring3 = pstring.first; //getÏÂ±ê
     string tstring4 = pstring.second;
     cout << tstring3 << " " << tstring4 << endl;
 
     cout << "====================\n";
 
-    //ç¬¬å…­ç§:struct
+    //µÚÁùÖÖ:struct
     rstr struct_string = return_string6();
     cout << struct_string.ststring1 << " " << struct_string.ststring2 << endl;
     return 0;
