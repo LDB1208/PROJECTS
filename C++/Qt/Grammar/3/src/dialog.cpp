@@ -1,9 +1,9 @@
 #include "../include/dialog.h"
 
 Dialog::Dialog(QWidget* parent)
-    : QDialog(parent)
-    , ui(new Ui::DialogClass) {
+    : QDialog(parent), ui(new Ui::DialogClass) {
     ui->setupUi(this);
+    ui->radioButton_Black->setChecked(true); //radioButton_Black默认选中
 
     //连接SIGNAL和SLOT
     connect(ui->radioButton_Black, SIGNAL(clicked()), this, SLOT(do_fontColor()));
@@ -44,8 +44,6 @@ void Dialog::do_fontColor() {
     else if (ui->radioButton_Red->isChecked())
         palette.setColor(QPalette::Text, Qt::red);
     else if (ui->radioButton_Blue->isChecked())
-        palette.setColor(QPalette::Text, Qt::blue);
-    else
-        palette.setColor(QPalette::Text, Qt::black);
+        palette.setColor(QPalette::Text, Qt::blue);    
     ui->plainTextEdit->setPalette(palette);
 }

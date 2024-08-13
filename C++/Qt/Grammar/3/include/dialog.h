@@ -18,6 +18,7 @@ private slots: //slotsÊÇ±ØÐëµÄ
     void on_checkBox_Bold_clicked(bool checked);
 
     void do_fontColor();
+
 private:
     Ui::DialogClass *ui;
 };
