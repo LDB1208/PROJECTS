@@ -21,8 +21,8 @@ int main() {
     //dynamic_cast只适用于多态类类型(需要虚函数表)
     Player* p0 = dynamic_cast<Player *>(enemy); //NULL(转换不成功)
     if (p0) {}
-    Player* p1 = dynamic_cast<Player*>(entity1); //转换成功
-
+    Player* p1 = dynamic_cast<Player *>(entity1); //转换成功
+ 
     //dynamic_cast存储了运行时类型信息(runtime information即RTTI)
     return 0;
 }
