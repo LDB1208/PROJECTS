@@ -1,20 +1,28 @@
--- Exercise: Return all your projects
---     name
---     unit price
---     new price (unit price * 1.1)
-SELECT name, unit_price, unit_price * 1.1 AS new_price
-FROM products;
+CREATE TABLE COMPANY(
+   ID       INT     PRIMARY KEY
+                    NOT NULL,
+   NAME     TEXT    NOT NULL,
+   AGE      INT     NOT NULL,
+   ADDRESS  CHAR(50),
+   SALARY   REAL
+);
 
--- 本程序演示WHERE
-SELECT *
-FROM Customers
-WHERE state = 'va' -- 不区分大小写
-OR points > 3000;
+INSERT INTO Company (ID,NAME,AGE,ADDRESS,SALARY)
+VALUES (1, 'Paul', 32, 'California', 20000.00 );
 
-SELECT *
-FROM Customers
-WHERE state <> 'va'; -- <>表示其它
+INSERT INTO Company (ID,NAME,AGE,ADDRESS,SALARY)
+VALUES (2, 'Allen', 25, 'Texas', 15000.00 );
 
-SELECT *
-FROM Customers
-WHERE birth_date > '1990-01-01'; -- 筛选1990-01-01后出生的用户
+INSERT INTO Company (ID,NAME,AGE,ADDRESS,SALARY)
+VALUES (3, 'Teddy', 23, 'Norway', 20000.00 );
+
+INSERT INTO Company (ID,NAME,AGE,ADDRESS,SALARY)
+VALUES (4, 'Mark', 25, 'Rich-Mond ', 65000.00 );
+
+INSERT INTO Company (ID,NAME,AGE,ADDRESS,SALARY)
+VALUES (5, 'David', 27, 'Texas', 85000.00 );
+
+INSERT INTO Company (ID,NAME,AGE,ADDRESS,SALARY)
+VALUES (6, 'Kim', 22, 'South-Hall', 45000.00 );
+
+INSERT INTO Company VALUES (7, 'James', 24, 'Houston', 10000.00 );
