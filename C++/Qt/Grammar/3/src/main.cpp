@@ -1,9 +1,10 @@
-#include "../include/dialog.h"
-#include <QtWidgets/QApplication>
+#include <QApplication>
+#include <QPushButton>
+#include "../form/dialog.h"
 
 int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
     Dialog w;
     w.show();
-    return a.exec();
+    return QApplication::exec();
 }

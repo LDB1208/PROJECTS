@@ -1,26 +1,27 @@
-#pragma once
+#ifndef DIALOG_H
+#define DIALOG_H
 
 #include <QDialog>
-#include <QCheckBox> //¹´Ñ¡¿ò
-#include <QRadioButton> //µ¥Ñ¡¿ò
-#include <QPlainTextEdit> //ÎÄ×Ö±à¼­¿ò
-#include <QPushButton> //°´Å¥
+#include <QCheckBox> //å‹¾é€‰æ¡†
+#include <QRadioButton> //å•é€‰æ¡†
+#include <QPlainTextEdit> //æ–‡å­—ç¼–è¾‘æ¡†
+#include <QPushButton> //æŒ‰é’®
 
 class Dialog : public QDialog {
     Q_OBJECT
 
 public:
-    Dialog(QWidget *parent = nullptr);
-    ~Dialog() {};
+    explicit Dialog(QWidget *parent = nullptr);
+    ~Dialog() override = default;
 
-private slots: //²Ûº¯ÊıÉùÃ÷
-    void do_checkBox_Underline(bool checked);
+    private slots: //æ§½å‡½æ•°å£°æ˜
+        void do_checkBox_Underline(bool checked);
     void do_checkBox_Italic(bool checked);
     void do_checkBox_Bold(bool checked);
     void do_fontColor();
 
 private:
-    //¿Ø¼ş
+    //æ§ä»¶
     QCheckBox* checkBox_Underline, * checkBox_Italic, * checkBox_Bold;
     QRadioButton* radioButton_Black, * radioButton_Red, * radioButton_Blue;
     QPlainTextEdit* plainTextEdit;
@@ -28,3 +29,5 @@ private:
     void initUI();
     void initSignalSlots();
 };
+
+#endif //DIALOG_H

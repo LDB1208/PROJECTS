@@ -2,7 +2,7 @@
 #include <vector>
 
 /*
- * ±¾³ÌÐòÑÝÊ¾²åÈëÅÅÐò
+ * æœ¬ç¨‹åºæ¼”ç¤ºæ’å…¥æŽ’åº
  */
 
 template<typename T>

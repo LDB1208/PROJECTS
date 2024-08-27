@@ -3,8 +3,6 @@
 
 using namespace std;
 
-#pragma comment(lib, "winmm.lib")
-
 enum Scale {
     A5 = 81, G5 = 79, F5 = 77, E5 = 76, D5 = 74, C5 = 72,
 
@@ -28,7 +26,7 @@ enum Voice {
 
 };
 
-// Æð·çÁË
+// èµ·é£Žäº†
 void Wind() {
     HMIDIOUT handle;
     midiOutOpen(&handle, 0, 0, 0, CALLBACK_NULL);

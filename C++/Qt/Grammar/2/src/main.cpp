@@ -1,10 +1,10 @@
-#include "../include/widget.h"
-#include <QtWidgets/QApplication>
+#include <QApplication>
+#include <QPushButton>
+#include "../form/app.h"
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
-    Widget w;
+    App w;
     w.show();
-    return a.exec();
+    return QApplication::exec();
 }

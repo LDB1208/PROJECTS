@@ -1,4 +1,9 @@
-#pragma once
+//
+// Created by LDB on 2024/8/21.
+//
+
+#ifndef PCH_H
+#define PCH_H
 
 #include <iostream>
 #include <algorithm>
@@ -21,3 +26,5 @@
 
 //Windows API
 #include <Windows.h>
+
+#endif //PCH_H
