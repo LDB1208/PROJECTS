@@ -17,7 +17,7 @@ namespace Ui {
 QT_END_NAMESPACE
 
 class Dialog : public QDialog {
-    Q_OBJECT
+Q_OBJECT
 
 public:
     explicit Dialog(QWidget *parent = nullptr);

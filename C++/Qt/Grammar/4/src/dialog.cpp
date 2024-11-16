@@ -2,20 +2,19 @@
 #include <QHBoxLayout> //水平布局
 #include <QVBoxLayout> //垂直布局
 
-Dialog::Dialog(QWidget* parent)
-    : QDialog(parent),
-    //初始化
-    checkBox_Underline(new QCheckBox("Underline")), //勾选框
-    checkBox_Italic(new QCheckBox("Italic")),
-    checkBox_Bold(new QCheckBox("Bold")),
-    radioButton_Black(new QRadioButton("Black")), //单选框
-    radioButton_Red(new QRadioButton("Red")),
-    radioButton_Blue(new QRadioButton("Blue")),
-    plainTextEdit(new QPlainTextEdit), //文本编辑框
-    buttonOK(new QPushButton("OK")), //按钮
-    buttonClear(new QPushButton("Clear")),
-    buttonClose(new QPushButton("Close"))
-{
+Dialog::Dialog(QWidget *parent)
+        : QDialog(parent),
+        //初始化
+          checkBox_Underline(new QCheckBox("Underline")), //勾选框
+          checkBox_Italic(new QCheckBox("Italic")),
+          checkBox_Bold(new QCheckBox("Bold")),
+          radioButton_Black(new QRadioButton("Black")), //单选框
+          radioButton_Red(new QRadioButton("Red")),
+          radioButton_Blue(new QRadioButton("Blue")),
+          plainTextEdit(new QPlainTextEdit), //文本编辑框
+          buttonOK(new QPushButton("OK")), //按钮
+          buttonClear(new QPushButton("Clear")),
+          buttonClose(new QPushButton("Close")) {
     initUI();
     initSignalSlots();
 }
@@ -60,24 +59,24 @@ void Dialog::initUI() {
     font.setPointSize(20); //改变大小
     plainTextEdit->setFont(font); //返回字体
 
-    QHBoxLayout* HLayout = new QHBoxLayout(); //水平布局
+    QHBoxLayout *HLayout = new QHBoxLayout(); //水平布局
     HLayout->addWidget(checkBox_Underline); //添加控件
     HLayout->addWidget(checkBox_Italic);
     HLayout->addWidget(checkBox_Bold);
 
-    QHBoxLayout* HLayout2 = new QHBoxLayout();
+    QHBoxLayout *HLayout2 = new QHBoxLayout();
     HLayout2->addWidget(radioButton_Black);
     HLayout2->addWidget(radioButton_Red);
     HLayout2->addWidget(radioButton_Blue);
 
-    QHBoxLayout* HLayout3 = new QHBoxLayout();
+    QHBoxLayout *HLayout3 = new QHBoxLayout();
     HLayout3->addStretch(); //增加伸缩量
     HLayout3->addWidget(buttonClear);
     HLayout3->addStretch();
     HLayout3->addWidget(buttonOK);
     HLayout3->addWidget(buttonClose);
 
-    QVBoxLayout* VLayout = new QVBoxLayout(); //垂直布局
+    QVBoxLayout *VLayout = new QVBoxLayout(); //垂直布局
     VLayout->addLayout(HLayout); //添加布局
     VLayout->addLayout(HLayout2);
     VLayout->addWidget(plainTextEdit);

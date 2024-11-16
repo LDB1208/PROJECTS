@@ -9,7 +9,7 @@
 
 
 Dialog::Dialog(QWidget *parent) :
-    QDialog(parent), ui(new Ui::Dialog) {
+        QDialog(parent), ui(new Ui::Dialog) {
     ui->setupUi(this);
     ui->radioButton_Black->setChecked(true); //radioButton_Black默认选中
 
