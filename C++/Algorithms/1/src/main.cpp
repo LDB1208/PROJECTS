@@ -2,7 +2,7 @@
 #include <vector>
 
 /*
- * 本程序演示选择排序
+ * 鏈▼搴忔紨绀洪�夋嫨鎺掑簭
  */
 
 template<typename T>
