@@ -1,0 +1,8 @@
+[
+{
+  "directory": "F:/Programming/PROJECTS/C++/Algorithms/3/build",
+  "command": "F:\\Programming\\SDK\\MinGW64\\bin\\g++.exe   -g -o CMakeFiles\\3.dir\\src\\main.cpp.obj -c F:\\Programming\\PROJECTS\\C++\\Algorithms\\3\\src\\main.cpp",
+  "file": "F:/Programming/PROJECTS/C++/Algorithms/3/src/main.cpp",
+  "output": "CMakeFiles/3.dir/src/main.cpp.obj"
+}
+]

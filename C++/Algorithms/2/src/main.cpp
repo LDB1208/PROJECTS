@@ -37,5 +37,6 @@ int main() {
     insertion_sort_desc(b);
     for (char i : b)
         std::cout << i << ' ';
+    std::cin.get();
     return 0;
 }

@@ -2,8 +2,8 @@
 #include <vector>
 
 /*
-* ±¾³ÌĞòÑİÊ¾Ï£¶ûÅÅĞò
-*/
+ * æœ¬ç¨‹åºæ¼”ç¤ºå¸Œå°”æ’åº
+ */
 
 template<typename T>
 void shell_sort_asc(std::vector<T>& arr) {
