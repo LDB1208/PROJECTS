@@ -3,58 +3,65 @@
 
 using namespace std;
 
-int main() {
+int main()
+{
     int n;
     char get;
     double a, b, c, d, e, f, g, h, i, j, k, l;
-    cout << "´Ë³ÌĞò¿ÉÒÔ¼ÆËã³ö¶şÔª»òÈıÔªÒ»´Î·½³Ì×éµÄ½â" << endl;
+    cout << "æ­¤ç¨‹åºå¯ä»¥è®¡ç®—å‡ºäºŒå…ƒæˆ–ä¸‰å…ƒä¸€æ¬¡æ–¹ç¨‹ç»„çš„è§£" << endl;
     cin.get();
 
-    while (true) {
-        cout << "¶şÔª»¹ÊÇÈıÔª:";
+    while (true)
+    {
+        cout << "äºŒå…ƒè¿˜æ˜¯ä¸‰å…ƒ:";
         cin >> n;
 
-        switch (n) {
+        switch (n)
+        {
         case 2:
-            cout << "ÇëÒÀ´ÎÊäÈëÎ´ÖªÊıÏîµÄÏµÊıºÍÓÒÖµ,¹²6¸ö(Ôİ²»Ö§³Ö·ÖÊı)" << endl;
-            cin >> a >> b >> c >> d >> e >> f; //½ÓÊÕÊäÈë
-            calc_2(a, b, c, d, e, f); //¼ÆËã
+            cout << "è¯·ä¾æ¬¡è¾“å…¥æœªçŸ¥æ•°é¡¹çš„ç³»æ•°å’Œå³å€¼,å…±6ä¸ª(æš‚ä¸æ”¯æŒåˆ†æ•°)" << endl;
+            cin >> a >> b >> c >> d >> e >> f; // æ¥æ”¶è¾“å…¥
+            calc_2(a, b, c, d, e, f);          // è®¡ç®—
 
-            while (true) {
-                cout << "ÊÇ·ñÍË³ö?(y/n)";
+            while (true)
+            {
+                cout << "æ˜¯å¦é€€å‡º?(y/n)";
                 cin >> get;
-                if (get == 'y' || get == 'Y') //ÅĞ¶ÏgetÊÇ·ñÎªy»òY
-                    return 0; //½áÊø³ÌĞò
-                else if (get == 'n' || get == 'N') //ÅĞ¶ÏgetÊÇ·ñÎªn»òN
-                    break; //Ìø³öwhileÑ­»·
-                else {
-                    cout << "ÊäÈë´íÎó!ÇëÖØĞÂÊäÈë" << endl;
-                    continue; //¼ÌĞøwhileÑ­»·
+                if (get == 'y' || get == 'Y')      // åˆ¤æ–­getæ˜¯å¦ä¸ºyæˆ–Y
+                    return 0;                      // ç»“æŸç¨‹åº
+                else if (get == 'n' || get == 'N') // åˆ¤æ–­getæ˜¯å¦ä¸ºnæˆ–N
+                    break;                         // è·³å‡ºwhileå¾ªç¯
+                else
+                {
+                    cout << "è¾“å…¥é”™è¯¯!è¯·é‡æ–°è¾“å…¥" << endl;
+                    continue; // ç»§ç»­whileå¾ªç¯
                 }
             }
-            break; //Ìø³öswitchÓï¾ä
+            break; // è·³å‡ºswitchè¯­å¥
 
         case 3:
-            cout << "ÇëÒÀ´ÎÊäÈëÎ´ÖªÊıÏîµÄÏµÊıºÍÓÒÖµ,¹²12¸ö(Ôİ²»Ö§³Ö·ÖÊı)" << endl;
-            cin >> a >> b >> c >> d >> e >> f >> g >> h >> i >> j >> k >> l; //½ÓÊÕÊäÈë
-            calc_3(a, b, c, d, e, f, g, h, i, j, k, l); //¼ÆËã
+            cout << "è¯·ä¾æ¬¡è¾“å…¥æœªçŸ¥æ•°é¡¹çš„ç³»æ•°å’Œå³å€¼,å…±12ä¸ª(æš‚ä¸æ”¯æŒåˆ†æ•°)" << endl;
+            cin >> a >> b >> c >> d >> e >> f >> g >> h >> i >> j >> k >> l; // æ¥æ”¶è¾“å…¥
+            calc_3(a, b, c, d, e, f, g, h, i, j, k, l);                      // è®¡ç®—
 
-            while (true) {
-                cout << "ÊÇ·ñÍË³ö?(y/n)";
+            while (true)
+            {
+                cout << "æ˜¯å¦é€€å‡º?(y/n)";
                 cin >> get;
-                if (get == 'y' || get == 'Y') //ÅĞ¶ÏgetÊÇ·ñÎªy»òY
-                    return 0; //½áÊø³ÌĞò
-                else if (get == 'n' || get == 'N') //ÅĞ¶ÏgetÊÇ·ñÎªn»òN
-                    break; //Ìø³öwhileÑ­»·
-                else {
-                    cout << "ÊäÈë´íÎó!ÇëÖØĞÂÊäÈë" << endl;
-                    continue; //¼ÌĞøwhileÑ­»·
+                if (get == 'y' || get == 'Y')      // åˆ¤æ–­getæ˜¯å¦ä¸ºyæˆ–Y
+                    return 0;                      // ç»“æŸç¨‹åº
+                else if (get == 'n' || get == 'N') // åˆ¤æ–­getæ˜¯å¦ä¸ºnæˆ–N
+                    break;                         // è·³å‡ºwhileå¾ªç¯
+                else
+                {
+                    cout << "è¾“å…¥é”™è¯¯!è¯·é‡æ–°è¾“å…¥" << endl;
+                    continue; // ç»§ç»­whileå¾ªç¯
                 }
             }
-            break; //Ìø³öswitchÓï¾ä
+            break; // è·³å‡ºswitchè¯­å¥
 
         default:
-            cout << "ÊäÈë´íÎó!ÇëÖØĞÂÊäÈë" << endl;
+            cout << "è¾“å…¥é”™è¯¯!è¯·é‡æ–°è¾“å…¥" << endl;
         }
     }
     return 0;
