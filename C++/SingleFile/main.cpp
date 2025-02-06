@@ -7,12 +7,7 @@ int *p1, p2;
 
 int main()
 {
-    double dval = arg;
-    double *pd = &dval;
-    double *pd2 = pd; // 等价于double *pd2 = &dval;
-    cout << pd << '\n'
-         << *pd << '\n'
-         << pd2 << '\n'
-         << *pd2;
+    int dval = arg;
+    int *pd = &dval;
     return 0;
 }
